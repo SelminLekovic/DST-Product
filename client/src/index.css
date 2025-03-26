@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border;
+  font-family: "Clash";
+  margin: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+@font-face {
+  font-family: "Clash";
+  src: url("/src/assets/ClashGrotesk-Variable.ttf");
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.animate-modal-zoom-in {
+  animation: modalZoomIn 0.5s forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modalZoomIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 66px;
+}
+
+
